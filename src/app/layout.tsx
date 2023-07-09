@@ -1,20 +1,21 @@
-import '../styles/globals.css'
-import type { Metadata } from 'next'
+'use client'
 
-
-export const metadata: Metadata = {
-  title: "Alex | Developer",
-  description: "Seja bem-vindo ao meu Portfólio",
-};
+import { ThemeProvider } from 'styled-components';
+import GlobalStyles from '../styles/global';
+import theme from '../styles/theme';
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="pt-BR">
+      <ThemeProvider theme={theme}>
+        <title>Alex | Developer</title>
+        <GlobalStyles />
+        <body>{children}</body>
+      </ThemeProvider>
     </html>
-  )
+  );
 }
