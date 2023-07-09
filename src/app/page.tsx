@@ -1,9 +1,15 @@
-import { Header } from "../components/Header/Header";
+import { Header } from '../components/Header/Header';
+import { HomeContainer } from '../styles/HomeStyles';
+import { HomeSection } from '../components/HomeSection/HomeSection';
 
 export default function Home() {
   return (
-    <div>
+    <HomeContainer>
       <Header />
-    </div>
+
+      <main className="container">
+        <HomeSection />
+      </main>
+    </HomeContainer>
   );
 }
