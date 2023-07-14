@@ -4,6 +4,7 @@ import { HomeSection } from '../components/HomeSection/HomeSection';
 import { Technologies } from '../components/Technologies/Technologies';
 import { Projects } from '../components/Projects/Projects';
 import { HardSkills } from '../components/HardSkills/HardSkills';
+import { FormContact } from '../components/FormContact/FormContact';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Technologies />
         <Projects />
         <HardSkills />
+        <FormContact />
       </main>
     </HomeContainer>
   );
