@@ -5,6 +5,7 @@ import { Technologies } from '../components/Technologies/Technologies';
 import { Projects } from '../components/Projects/Projects';
 import { HardSkills } from '../components/HardSkills/HardSkills';
 import { FormContact } from '../components/FormContact/FormContact';
+import { Footer } from '../components/Footer/Footer';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <HardSkills />
         <FormContact />
       </main>
+      <Footer />
     </HomeContainer>
   );
 }
