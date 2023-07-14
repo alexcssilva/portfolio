@@ -3,6 +3,7 @@ import { HomeContainer } from '../styles/HomeStyles';
 import { HomeSection } from '../components/HomeSection/HomeSection';
 import { Technologies } from '../components/Technologies/Technologies';
 import { Projects } from '../components/Projects/Projects';
+import { HardSkills } from '../components/HardSkills/HardSkills';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <HomeSection />
         <Technologies />
         <Projects />
+        <HardSkills />
       </main>
     </HomeContainer>
   );
