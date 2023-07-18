@@ -10,7 +10,7 @@ export function Header() {
       <ul>
         <NavLink title="Início" path="/" />
         <NavLink title="Sobre" path="/" />
-        <NavLink title="Habilidades" path="/" />
+        <NavLink title="Habilidades" path="/" includes/>
         <NavLink title="Projetos" path="/" />
         <NavLink title="Contato" path="/" />
         <MdDarkMode size={24} color='black'/>

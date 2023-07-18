@@ -5,11 +5,18 @@ import { usePathname } from 'next/navigation';
 interface Props {
   title: string;
   path: string;
+  includes?: boolean;
 }
 
-export default function NavLink({ title, path }: Props) {
+export default function NavLink({ title, path, includes = false }: Props) {
   const router = usePathname();
-  const isActive = router === path;
+  function verifyIsActive() {
+    if (includes) {
+      return router?.includes(path) || false;
+    }
+    return router === path;
+  }
+  const isActive = verifyIsActive()
 
   return (
     <NavLinkContainer isActive={isActive}>
