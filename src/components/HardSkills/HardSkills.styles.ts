@@ -7,6 +7,7 @@ export const Container = styled.section`
     margin-top: 8rem;
     width: 100%;
     display: flex;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: center;
     gap: 8rem;
